@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <ListView
+        android:id="@+id/lv_helps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@color/form_divider"
+        android:dividerHeight="@dimen/divider_width"
+        android:layout_weight="1"/>
+    
+    <!--<Button
+        android:id="@+id/btn_contact_service"
+        style="@style/CommonButton.Orange"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/contact_customer_service"/>-->
+</LinearLayout>

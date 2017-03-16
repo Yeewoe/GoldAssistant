@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ImageView style="@style/PublicLineH" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/bg_1"
+        android:gravity="center"
+        android:text="分享到"
+        android:textColor="@color/common_gray_5"
+        android:textSize="15dp" />
+
+    <ImageView style="@style/PublicLineH" />
+
+    <GridView
+        android:id="@+id/share_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="0.4"
+        android:background="@color/bg_0"
+        android:numColumns="4"
+        android:padding="10dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="23dp" />
+
+    <ImageView style="@style/PublicLineH" />
+
+    <LinearLayout
+        android:id="@+id/ll_copy"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bg_1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/category" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="复制内容到粘贴板"
+            android:textColor="@color/common_gray_5"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ImageView style="@style/PublicLineH" />
+
+    <View
+        style="@style/FormDivider_1"
+        android:background="@color/bg_0" />
+
+    <ImageView style="@style/PublicLineH" />
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bg_1"
+        android:gravity="center"
+        android:text="@string/back"
+        android:textColor="@color/common_gray_5"
+        android:textSize="15dp" />
+
+    <ImageView style="@style/PublicLineH" />
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/group_notice_bg"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/group_notice"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:text="通知内容"
+        android:id="@+id/group_notice_content"
+        android:layout_marginLeft="14sp" />
+
+
+
+    <LinearLayout android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_form_button"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/edit"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="@string/edit"
+            style="@style/FormBlueButton"
+            android:gravity="center"
+            android:drawablePadding="15dp"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+<!-- From: file:/Users/dehua/Desktop/jianzhidaren/GoldAssistant/app/src/main/res/layout/activity_chat_group_notice_popup.xml -->

@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.parttime.main.MyFragment" >
+    <include layout="@layout/title"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/form_items_margin" >
+
+            <!-- 设置 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:id="@+id/tv_businessman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_head"
+                    android:textSize="15dp"
+                    android:textColor="@color/txt_color_black"
+                    android:layout_marginTop="17.5dp"/>
+                <com.parttime.widget.RankView
+                    android:id="@+id/rv_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_head"
+                    android:layout_below="@id/tv_businessman"
+                    android:layout_marginTop="9dp"
+                    app:rv_item_height="16dp"
+                    app:rv_item_width="16dp"
+                    app:rv_inner_margin="2dp"/>
+
+                <ImageView
+                    android:id="@+id/tv_cert_state"
+                    android:layout_width="55dp"
+                    android:layout_height="16dp"
+                    android:layout_toRightOf="@id/iv_head"
+                    android:layout_below="@id/rv_rank"
+                    android:layout_marginTop="9dp"
+                    android:src="@drawable/selector_cert_status"/>
+
+                <TextView
+                    android:id="@+id/tv_sincere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+
+            <com.parttime.widget.FormItem
+                android:id="@+id/fi_my_intro"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_item_height"
+                android:layout_marginTop="@dimen/form_items_margin"
+                android:background="@drawable/mm_listitem_default_white"
+                app:form_icon="@drawable/my_intro"
+                app:form_title="@string/my_intro"/>
+
+            <com.parttime.widget.FormItem
+                android:id="@+id/fi_my_fans"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_item_height"
+                android:background="@drawable/mm_listitem_default_white"
+                app:topLine_shown="false"
+                app:form_icon="@drawable/my_fans"
+                app:form_title="@string/my_fans"
+                android:visibility="gone"/>
+
+            <com.parttime.widget.FormItem
+                android:id="@+id/fi_my_balance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_item_height"
+                android:background="@drawable/mm_listitem_default_white"
+                app:form_icon="@drawable/my_balance"
+                app:form_title="@string/my_balance"
+                android:layout_marginTop="@dimen/form_items_margin"/>
+
+
+            <com.parttime.widget.FormItem
+                android:id="@+id/fi_praise_recved"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_item_height"
+                android:background="@drawable/mm_listitem_default_white"
+                app:form_icon="@drawable/praise_recved"
+                app:form_title="@string/praise_recved"
+                app:bottomLine_leftIndent="true"
+                app:bottomLine_rightIndent="true"
+                android:layout_marginTop="@dimen/form_items_margin"/>
+
+            <com.parttime.widget.FormItem
+                android:id="@+id/fi_fresh_man_guide"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_item_height"
+                android:background="@drawable/mm_listitem_default_white"
+                app:form_icon="@drawable/freshman_guide"
+                app:form_title="@string/fresh_man_guide"
+                app:topLine_shown="false"/>
+
+            <com.parttime.widget.FormItem
+                android:id="@+id/fi_real_name_cert"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_item_height"
+                android:background="@drawable/mm_listitem_default_white"
+                android:layout_marginTop="@dimen/form_items_margin"
+                app:form_icon="@drawable/real_name"
+                app:form_title="@string/real_name_cert"
+                />
+
+            <com.parttime.widget.FormItem
+                android:id="@+id/fi_suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_item_height"
+                android:background="@drawable/mm_listitem_default_white"
+                app:form_icon="@drawable/suggestion"
+                app:form_title="@string/suggestion"
+                app:bottomLine_leftIndent="true"
+                app:bottomLine_rightIndent="true"
+                android:layout_marginTop="@dimen/form_items_margin"/>
+
+            <com.parttime.widget.FormItem
+                android:id="@+id/fi_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_item_height"
+                android:background="@drawable/mm_listitem_default_white"
+                app:form_icon="@drawable/setting"
+                app:form_title="@string/setting"
+                app:topLine_shown="false"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
